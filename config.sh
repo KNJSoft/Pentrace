@@ -1,10 +1,15 @@
 # Configuration de Pentrace
 
-# Répertoires
+# Répertoires principaux
 PENTRACE_DIR="~/.pentrace"
 LOG_DIR="$PENTRACE_DIR/logs"
 WORDLIST_DIR="$PENTRACE_DIR/wordlists"
 ACTIVE_WORDLIST="$WORDLIST_DIR/active"
+
+# Répertoires supplémentaires
+CONFIG_DIR="$PENTRACE_DIR/config"
+DATA_DIR="$PENTRACE_DIR/data"
+CACHE_DIR="$PENTRACE_DIR/cache"
 
 # Paramètres par défaut
 DEFAULT_LOG_LINES=20

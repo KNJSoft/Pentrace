@@ -1,10 +1,19 @@
 #!/bin/bash
 
 # Variables globales
-PENTRACE_DIR="~/.pentrace"
-LOG_DIR="$PENTRACE_DIR/logs"
-WORDLIST_DIR="$PENTRACE_DIR/wordlists"
-ACTIVE_WORDLIST="$WORDLIST_DIR/active"
+source config.sh
+
+# Fonction pour afficher l'aide
+show_help() {
+    echo "Usage: pt <commande>"
+    echo ""
+    echo "Commandes disponibles :"
+    echo "  start    - Démarrer l'enregistrement"
+    echo "  stop     - Arrêter l'enregistrement"
+    echo "  show     - Afficher les derniers logs"
+    echo "  uninstall - Désinstaller Pentrace"
+    echo "  help     - Afficher cette aide"
+}
 
 # Fonction pour créer la structure de répertoires
 create_structure() {
@@ -113,6 +122,7 @@ do_help() {
     echo "  wordlist <action> - Gérer les wordlists"
     echo "  help              - Afficher cette aide"
     echo "  version           - Afficher la version"
+    echo "  uninstall         - Désinstaller Pentrace"
 }
 
 # Fonction de version
@@ -120,8 +130,27 @@ do_version() {
     echo "Pentrace v1.0.0"
 }
 
-# Traitement des arguments
-case $1 in
+# Fonction pour désinstaller Pentrace
+do_uninstall() {
+    echo "Cette opération va désinstaller Pentrace. Êtes-vous sûr ? (o/n)"
+    read -r confirmation
+    if [ "$confirmation" = "o" ]; then
+        sudo uninstall.sh
+        exit 0
+    else
+        echo "Désinstallation annulée"
+        exit 1
+    fi
+}
+
+# Vérifier le nombre d'arguments
+if [ $# -eq 0 ]; then
+    show_help
+    exit 0
+fi
+
+# Exécuter la commande demandée
+case "$1" in
     start)
         do_start
         ;;

@@ -1,11 +1,7 @@
 #!/bin/bash
 
-
-# Répertoires
-PENTRACE_DIR="~/.pentrace"
-LOG_DIR="$PENTRACE_DIR/logs"
-WORDLIST_DIR="$PENTRACE_DIR/wordlists"
-ACTIVE_WORDLIST="$WORDLIST_DIR/active"
+# Source config file
+source config.sh
 
 echo -e "\033[0;34m"
 echo "  ____  _            _     _____ _           _     _       "
