@@ -1,0 +1,15 @@
+# Configuration et logs
+~/.pentrace/
+
+# Fichiers temporaires
+*.swp
+*.swo
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+
+# Fichiers de compilation
+*.o
+*.pyc
+__pycache__/\n
