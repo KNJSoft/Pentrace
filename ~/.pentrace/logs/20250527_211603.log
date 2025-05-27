@@ -1,0 +1,27 @@
+Script started on 2025-05-27 21:16:03+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ ls
+[?2004l[0m[01;34m'~'[0m   config.sh   [01;32minstall.sh[0m   [01;32mpentrace.sh[0m   README.md
+[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ lssudo mount /dev/dm-0 ~/hddsda3 ~/sda2exit[Ksudo mount /dev/sda3 ~/sda2[1Pdm-0 ~/hddls[K[Kls -la
+[?2004ltotal 32
+drwxrwxr-x 3 knjsoft knjsoft 4096 mai   16 00:00  [0m[01;34m.[0m
+drwxrwxr-x 8 knjsoft knjsoft 4096 mai   15 23:24  [01;34m..[0m
+drwxrwxr-x 3 knjsoft knjsoft 4096 mai   15 23:53 [01;34m'~'[0m
+-rw-r--r-- 1 knjsoft knjsoft  485 mai   15 23:49  config.sh
+-rwxr-xr-x 1 knjsoft knjsoft 2018 mai   27 21:04  [01;32minstall.sh[0m
+-rwxr-xr-x 1 knjsoft knjsoft 3638 mai   27 21:01  [01;32mpentrace.sh[0m
+-rw-rw-r-- 1 knjsoft knjsoft 4144 mai   15 23:46  README.md
+[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ pt stoppppppp
+[?2004lUsage: pentrace <commande> [options]
+Commandes disponibles:
+  start             - Démarrer l'enregistrement
+  stop              - Arrêter l'enregistrement
+  show [--lines N]  - Afficher les dernières lignes du log
+  list-logs         - Lister tous les fichiers de logs
+  view-log <file>   - Afficher un fichier de log spécifique
+  wordlist <action> - Gérer les wordlists
+  help              - Afficher cette aide
+  version           - Afficher la version
+[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ pt stoppppppp[K[K[K[K[K[K[Kp
+[?2004lArrêt de l'enregistrement
+
+Script done on 2025-05-27 21:16:41+01:00 [COMMAND_EXIT_CODE="0"]
