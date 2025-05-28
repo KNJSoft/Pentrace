@@ -133,17 +133,6 @@ Pentrace est un outil de test de pénétration et d'analyse de sécurité conçu
 
 1.  **Supprimer le binaire :**
     ```bash
-    sudo ./uninstall.sh
+    pt uninstall
     ```
-
-2.  **Supprimer le répertoire de configuration et les logs (Optionnel) :**
-    ```bash
-    rm -rf ~/.pentrace
-    ```
-    *(Ceci supprimera tous les fichiers de logs et les wordlists créés par Pentrace. Soyez prudent.)*
-
-## Configuration (Potentiel futur)
-
-* Un fichier de configuration pourrait être ajouté ultérieurement pour personnaliser le comportement de Pentrace (par exemple, le répertoire de stockage des logs, la wordlist par défaut, etc.).
-
 
