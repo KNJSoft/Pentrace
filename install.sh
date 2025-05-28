@@ -3,13 +3,16 @@
 # Source config file
 source config.sh
 
-echo -e "\033[0;34m"
-echo "  ____  _            _     _____ _           _     _       "
-echo " / ___|| |_ __ _ ___| |__ |  ___| |__   ___ | |__ (_)_ __  "
-echo " \___ \| __/ _\` |/ __| '_ \| |_  | '_ \ / _ \| '_ \| | '_ \ "
-echo "  ___) | || (_| | (__| | | |  _| | |_) | (_) | |_) | | | | "
-echo " |____/ \__\__,_|\___|_| |_|_|   |_.__/ \___/|_.__/|_|_| |_|"
-echo "\KNJSoft ==> https://knjsoft.pythonanywhere.com"
+echo -e "${BLUE}"
+
+echo "  _____           _                       "
+echo " |  __ \         | |                      "
+echo " | |__) |__ _ __ | |_ _ __ __ _  ___ ___  "
+echo " |  ___/ _ \ '_ \| __| '__/ _\` |/ __/ _ \ "
+echo " | |  |  __/ | | | |_| | | (_| | (_|  __/ "
+echo " |_|   \___|_| |_|\__|_|  \__,_|\___\___|"
+echo "                                         "                                                 
+echo " KNJSoft ==> https://knjsoft.pythonanywhere.com"
 echo ""
 echo "Pentrace Installation Script"
 echo "==========================="
