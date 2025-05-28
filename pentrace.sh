@@ -132,13 +132,13 @@ do_version() {
 
 # Fonction pour désinstaller Pentrace
 do_uninstall() {
-    echo "Cette opération va désinstaller Pentrace. Êtes-vous sûr ? (o/n)"
+    echo -en "${BLUE}Cette opération va désinstaller Pentrace. Êtes-vous sûr ? (o/n)${NC}"
     read -r confirmation
     if [ "$confirmation" = "o" ]; then
-        sudo uninstall.sh
+        sudo ./uninstall.sh
         exit 0
     else
-        echo "Désinstallation annulée"
+        echo -e "${RED}Désinstallation annulée${NC}"
         exit 1
     fi
 }
@@ -174,6 +174,9 @@ case "$1" in
         ;;
     version)
         do_version
+        ;;
+    uninstall)
+        do_uninstall
         ;;
     *)
         do_help

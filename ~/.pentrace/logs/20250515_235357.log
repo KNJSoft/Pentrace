@@ -1,42 +1,0 @@
-Script started on 2025-05-15 23:53:57+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
-[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ ls
-[?2004l[0m[01;34m'~'[0m   config.sh   [01;32minstall.sh[0m   README.md
-[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ pwd
-[?2004l/home/knjsoft/Shell/Pentrace
-[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ wordlist show
-[?2004lwordlist : commande introuvable
-[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ wordlist show[1@p[1@e[1@n[1@t[1@r[1@a[1@c[1@e[1@ 
-[?2004lactive
-[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ pentrace wordlist show[K[K[K[K[K[K[K[K[K[K[K[K[Klist-logs
-[?2004l
-20250515_235357.log
-[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ pentrace list-logs[K[K[K[K[K[K[K[K[Kview-log [7m20250515_235357.log[27m20250515_235357.log
-[?2004l[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ ls -la
-[?2004ltotal 28
-drwxrwxr-x 3 knjsoft knjsoft 4096 mai   15 23:53  [0m[01;34m.[0m
-drwxrwxr-x 8 knjsoft knjsoft 4096 mai   15 23:24  [01;34m..[0m
-drwxrwxr-x 3 knjsoft knjsoft 4096 mai   15 23:53 [01;34m'~'[0m
--rw-r--r-- 1 knjsoft knjsoft  485 mai   15 23:49  config.sh
--rwxr-xr-x 1 knjsoft knjsoft 1205 mai   15 23:51  [01;32minstall.sh[0m
--rw-rw-r-- 1 knjsoft knjsoft 4144 mai   15 23:46  README.md
-[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ ls -lapentrace view-log 20250515_235357.loglist-logs[Kwordlist show[9P[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[K[1Plsexitgit pushcommit -m "v2 ok"add .[Kcommit -m "v2 ok"push[K[4Pexit[2Plspwdwordlist show[9@pentrace [C[C[C[C[C[C[C[C[C[C[C[C[C[4Plist-logsview-log 20250515_235357.loglist-logs[Kwordlist show[9P[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[K[1Plsexitgit push[4Pexit[2Plspwdwordlist show[9@pentrace [C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[Kstop[K[K[K[Khhelp
-[?2004lUsage: pentrace <commande> [options]
-Commandes disponibles:
-  start             - Démarrer l'enregistrement
-  stop              - Arrêter l'enregistrement
-  show [--lines N]  - Afficher les dernières lignes du log
-  list-logs         - Lister tous les fichiers de logs
-  view-log <file>   - Afficher un fichier de log spécifique
-  wordlist <action> - Gérer les wordlists
-  help              - Afficher cette aide
-  version           - Afficher la version
-[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ pentrace hhelp[K[K[K[K[Kshow
-[?2004lAucun fichier de log actif trouvé
-[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ pentrace show[K[K[K[Kversion
-[?2004lPentrace v1.0.0
-[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ pentrace version[K[K[K[K[K[K[Kview-log
-[?2004lFichier de log non trouvé
-[?2004h]0;knjsoft@THE-HACKER: ~/Shell/Pentrace[01;32mknjsoft@THE-HACKER[00m:[01;34m~/Shell/Pentrace[00m$ pentrace view-log[K[K[K[K[K[K[K[Kstop
-[?2004lArrêt de l'enregistrement
-
-Script done on 2025-05-15 23:57:56+01:00 [COMMAND_EXIT_CODE="0"]
