@@ -1,6 +1,18 @@
 # Pentrace
 
-Pentrace is a penetration testing framework written in Bash.
+Pentrace est un outil de test de pénétration et d'analyse de sécurité conçu pour les professionnels de la cybersécurité. Écrit en Bash, il fournit un ensemble de fonctionnalités puissantes pour :
+
+- Enregistrer et analyser les sessions terminales
+- Suivre les activités de test de sécurité
+- Documenter les résultats des tests
+
+## Caractéristiques principales
+
+- **Enregistrement de sessions** : Capture automatique des commandes et de leurs résultats
+- **Gestion des wordlists** : Création, modification et utilisation de listes personnalisées
+- **Interface en ligne de commande** : Simple et intuitive à utiliser
+- **Logs horodatés** : Suivi précis de toutes les activités
+- **Installation facile** : Compatible avec les systèmes Linux
 
 
 # Manuel d'utilisation de Pentrace
