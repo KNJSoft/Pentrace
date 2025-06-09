@@ -11,6 +11,7 @@ show_help() {
     echo "  start    - Démarrer l'enregistrement"
     echo "  stop     - Arrêter l'enregistrement"
     echo "  show     - Afficher les derniers logs"
+    echo "  update   - Mettre à jour Pentrace"
     echo "  uninstall - Désinstaller Pentrace"
     echo "  help     - Afficher cette aide"
 }
@@ -110,6 +111,29 @@ do_wordlist() {
     esac
 }
 
+# Fonction pour mettre à jour Pentrace
+do_update() {
+    echo "Lancement de la mise à jour de Pentrace..."
+    # Get the directory of the currently running script (pentrace.sh)
+    local script_dir
+    script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    local update_script_path="$script_dir/update.sh"
+
+    if [ -f "$update_script_path" ]; then
+        if [ -x "$update_script_path" ]; then
+            bash "$update_script_path"
+        else
+            echo "Erreur : Le script de mise à jour (update.sh) n'est pas exécutable."
+            echo "Veuillez exécuter : chmod +x \"$update_script_path\""
+            exit 1
+        fi
+    else
+        echo "Erreur : Le script de mise à jour (update.sh) est introuvable."
+        echo "Chemin attendu : \"$update_script_path\""
+        exit 1
+    fi
+}
+
 # Fonction d'aide
 do_help() {
     echo "Usage: pentrace <commande> [options]"
@@ -120,6 +144,7 @@ do_help() {
     echo "  list-logs         - Lister tous les fichiers de logs"
     echo "  view-log <file>   - Afficher un fichier de log spécifique"
     echo "  wordlist <action> - Gérer les wordlists"
+    echo "  update            - Mettre à jour Pentrace"
     echo "  help              - Afficher cette aide"
     echo "  version           - Afficher la version"
     echo "  uninstall         - Désinstaller Pentrace"
@@ -177,6 +202,9 @@ case "$1" in
         ;;
     uninstall)
         do_uninstall
+        ;;
+    update)
+        do_update
         ;;
     *)
         do_help
